@@ -7,15 +7,10 @@ body {
     margin: 1rem;
 }
 
-p {
-    display: block;
-    padding: 0.5rem;
+.boxy {
     background: rgba(55, 40, 121, 0.274);
+    padding: 0.5rem;
     border-radius: 15px;
-}
-
-label {
-    /* background: #121212; */
 }
 
 ul {
@@ -25,7 +20,6 @@ ul {
 }
 
 li {
-    margin: 0;
     padding-left: 1rem;
 }
 
@@ -52,4 +46,16 @@ i {
 
 #laterDiv {
     font-size: 12px;
+}
+
+#error {
+    background-color: rgba(212, 31, 31, 0.473);
+    border-radius: 15px;
+    font-size: 15px;
+}
+
+.errorText {
+    color: #fff;
+    font-size: 20px;
+    padding: 1rem;
 }
