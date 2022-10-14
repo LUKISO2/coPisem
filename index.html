@@ -51,10 +51,9 @@
 from pyodide.http import pyfetch
 import datetime
 
-#response = await pyfetch(url="https://api.jsonstorage.net/v1/json/81b5d14c-0fe3-4cac-8fec-4f7f954630d0/c24ccd0e-67d3-4fc3-9756-267a4c4f6c0f", method="GET")
-#response_dict = await response.json()
+response = await pyfetch(url="https://api.jsonstorage.net/v1/json/81b5d14c-0fe3-4cac-8fec-4f7f954630d0/c24ccd0e-67d3-4fc3-9756-267a4c4f6c0f", method="GET")
+response_dict = await response.json()
 
-response_dict = {"error": True, "errMsg": "Při zpracování dnešního reportu došlo k chybě. Některé testy mohou chybět!", "today": [{"date": 1665698400, "info": "Test - patek"}], "tomorrow": [], "week": [{"date": 1665871200, "info": "Test - nedele"}], "later": [{"date": 1665957600, "info": "Test dejepis - v sesitu"}, {"date": 1666044000, "info": "Test chemie - nitrid, karbid, hydrid"}, {"date": 1666044000, "info": "Test AJ - body parts"}, {"date": 1666216800, "info": "Test Fyzika - elektrostatika/kondenzatory | vzit si kalkulacku"}]}
 def trsDic(x):
     return x.replace('Mon', 'Pondělí').replace('Tue', 'Úterý').replace('Wed', 'Středa').replace('Thu', 'Čtvrtek').replace('Fri', 'Pátek').replace('Sat', 'Sobota').replace('Sun', 'Neděle')
 
