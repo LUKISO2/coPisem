@@ -1,6 +1,6 @@
 body {
     color: #fff;
-    background: #181a1b;
+    background: #0b0c0c;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
@@ -10,7 +10,8 @@ body {
 p {
     display: block;
     padding: 0.5rem;
-    /* background: #000; */
+    background: rgba(55, 40, 121, 0.274);
+    border-radius: 15px;
 }
 
 label {
@@ -35,4 +36,20 @@ i {
 #nothing {
     padding: 1rem;
     padding-left: 0;
+}
+
+#todayDiv {
+    font-size: 20px;
+}
+
+#tomorrowDiv {
+    font-size: 20px;
+}
+
+#weekDiv {
+    font-size: 14px;
+}
+
+#laterDiv {
+    font-size: 12px;
 }
