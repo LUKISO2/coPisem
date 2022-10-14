@@ -1,0 +1,32 @@
+body {
+    color: #fff;
+    background: #121212;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    margin: 1rem;
+}
+
+p {
+    display: block;
+    padding: 0.5rem;
+    /* background: #000; */
+}
+
+label {
+    /* background: #121212; */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    /* background: #303030; */
+}
+
+li {
+    margin: 0;
+}
+
+i {
+    padding: 1rem;
+}
