@@ -25,8 +25,14 @@ ul {
 
 li {
     margin: 0;
+    padding-left: 1rem;
 }
 
 i {
     padding: 1rem;
+}
+
+#nothing {
+    padding: 1rem;
+    padding-left: 0;
 }
