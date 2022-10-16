@@ -16,7 +16,7 @@ window.addEventListener("load", () => {
     missing = "<div id=\"nothing\"><i>\u017d\u00e1dn\u00e9 napl\u00e1novan\u00e9 \u00fakoly.</i></div>";
 
     if (dict.error === true) {
-        console.log(`<p><label class="errorText">${dict.errMsg}</label></p>`);
+        document.getElementById('error').innerHTML = `<p><label class="errorText">${dict.errMsg}</label></p>`;
     }
 
     if (dict.today.length > 0) {
@@ -27,10 +27,10 @@ window.addEventListener("load", () => {
         }
 
         builded += "</ul>";
-        document.getElementById('today').innerHTML = builded;
     } else {
-        document.getElementById('today').innerHTML = missing;
+        builded = missing;
     }
+    document.getElementById('today').innerHTML = builded;
 
     if (dict.tomorrow.length > 0) {
         builded = "<ul>";
@@ -40,10 +40,10 @@ window.addEventListener("load", () => {
         }
 
         builded += "</ul>";
-        document.getElementById('tomorrow').innerHTML = builded;
     } else {
-        document.getElementById('tomorrow').innerHTML = missing;
+        builded = missing;
     }
+    document.getElementById('tomorrow').innerHTML = builded;
 
     if (dict.week.length > 0) {
         builded = "<ul>";
@@ -55,10 +55,10 @@ window.addEventListener("load", () => {
         }
 
         builded += "</ul>";
-        document.getElementById('week').innerHTML = builded;
     } else {
-        document.getElementById('week').innerHTML = missing;
+        builded = missing;
     }
+    document.getElementById('week').innerHTML = builded;
 
     if (dict.later.length > 0) {
         builded = "<ul>";
@@ -70,8 +70,8 @@ window.addEventListener("load", () => {
         }
 
         builded += "</ul>";
-        document.getElementById('later').innerHTML = builded;
     } else {
-        document.getElementById('later').innerHTML = missing;
+        builded = missing;
     }
+    document.getElementById('later').innerHTML = builded;
 });
