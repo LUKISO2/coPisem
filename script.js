@@ -13,7 +13,7 @@ window.addEventListener("load", () => {
         return x.replace("Mon", "Pond\u011bl\u00ed").replace("Tue", "\u00dater\u00fd").replace("Wed", "St\u0159eda").replace("Thu", "\u010ctvrtek").replace("Fri", "P\u00e1tek").replace("Sat", "Sobota").replace("Sun", "Ned\u011ble");
     }
 
-    missing = "<div id=\"nothing\"><i>\u017d\u00e1dn\u00e9 napl\u00e1novan\u00e9 \u00fakoly.</i></div>";
+    missing = "<div id=\"nothing\"><i>\u017d\u00e1dn\u00e9 napl\u00e1novan\u00e9 testy.</i></div>";
 
     if (dict.error === true) {
         document.getElementById('error').innerHTML = `<p><label class="errorText">${dict.errMsg}</label></p>`;
