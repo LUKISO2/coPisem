@@ -91,32 +91,35 @@ i {
 
 .pp {
     padding-left: 1rem;
+    bottom: 17px;
+}
+
+.tos {
+    padding-left: 1rem;
+    bottom: 17px;
 }
 
 @media screen and (max-width: 700px) {
- .tos {
-     visibility: hidden;
-     color: rgb(2, 2, 2);
-     font-size: 1px;
- }
+    .tos {
+        visibility: hidden;
+    }
 
- .pp {
-     visibility: hidden;
-     color: rgb(2, 2, 2);
-     font-size: 1px;
- }
+    .pp {
+        visibility: hidden;
+    }
 }
 
 .credits {
     position: absolute;
     left: 50%;
-    bottom: 15px;
+    bottom: 17px;
     transform: translate(-50%, 0);
 }
 
 .copyright {
     position: fixed;
     right: 2%;
+    bottom: 17px;
 }
 
 #privacy-policy {
