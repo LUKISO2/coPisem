@@ -110,7 +110,7 @@ i {
 .credits {
     position: absolute;
     left: 50%;
-    top: 30%;
+    bottom: 15px;
     transform: translate(-50%, 0);
 }
 
