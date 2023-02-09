@@ -100,8 +100,8 @@ i {
 }
 
 .copyright {
-    position: absolute;
-    right: 1%;
+    position: fixed;
+    right: 2%;
 }
 
 #privacy-policy {
@@ -111,8 +111,23 @@ i {
 
 #terms-of-use {
     position: fixed;
-    left: 2%;
+    left: 5%;
 }
+   
+@media screen and (max-width: 700px) {
+    .tos {
+        visibility: hidden;
+        color: rgb(2, 2, 2);
+        font-size: 1px;
+    }
+
+    .pp {
+        visibility: hidden;
+        color: rgb(2, 2, 2);
+        font-size: 1px;
+    }
+}
+
 
 .back {
     color: rgb(114, 114, 252);
