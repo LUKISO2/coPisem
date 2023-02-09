@@ -93,9 +93,24 @@ i {
     padding-left: 1rem;
 }
 
+@media screen and (max-width: 700px) {
+ .tos {
+     visibility: hidden;
+     color: rgb(2, 2, 2);
+     font-size: 1px;
+ }
+
+ .pp {
+     visibility: hidden;
+     color: rgb(2, 2, 2);
+     font-size: 1px;
+ }
+}
+
 .credits {
     position: absolute;
     left: 50%;
+    top: 30%;
     transform: translate(-50%, 0);
 }
 
@@ -113,21 +128,6 @@ i {
     position: fixed;
     left: 5%;
 }
-   
-@media screen and (max-width: 700px) {
-    .tos {
-        visibility: hidden;
-        color: rgb(2, 2, 2);
-        font-size: 1px;
-    }
-
-    .pp {
-        visibility: hidden;
-        color: rgb(2, 2, 2);
-        font-size: 1px;
-    }
-}
-
 
 .back {
     color: rgb(114, 114, 252);
