@@ -15,6 +15,10 @@ window.addEventListener("load", () => {
 
     missing = "<div id=\"nothing\"><i>\u017d\u00e1dn\u00e9 napl\u00e1novan\u00e9 testy.</i></div>";
 
+    if (Date.now() > dict.lastUpdate + 3600000) {
+        document.getElementById('error').innerHTML = `<p><label class="errorText">Nastala chyba backendu. Kontaktujte LUKISO2 pro opravu!</label></p>`;
+    }
+
     if (dict.error === true) {
         document.getElementById('error').innerHTML = `<p><label class="errorText">${dict.errMsg}</label></p>`;
     }
