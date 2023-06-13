@@ -1,13 +1,11 @@
-window.addEventListener("load", () => {
-    function httpGet(theUrl) {
-        var xmlHttp = new XMLHttpRequest();
-        xmlHttp.open( "GET", theUrl, false );
-        xmlHttp.send( null );
-        return JSON.parse(xmlHttp.responseText);
+window.addEventListener("load", async () => {
+    async function getJsonFromUrl(theUrl) {
+        let response = await fetch("https://api.jsonstorage.net/v1/json/81b5d14c-0fe3-4cac-8fec-4f7f954630d0/c24ccd0e-67d3-4fc3-9756-267a4c4f6c0f", {method: "GET"});
+        return await response.json();
     }
 
     var builded, missing, dict, date, prefix;
-    dict = httpGet("https://api.jsonstorage.net/v1/json/81b5d14c-0fe3-4cac-8fec-4f7f954630d0/c24ccd0e-67d3-4fc3-9756-267a4c4f6c0f")
+    dict = await getJsonFromUrl("https://api.jsonstorage.net/v1/json/81b5d14c-0fe3-4cac-8fec-4f7f954630d0/c24ccd0e-67d3-4fc3-9756-267a4c4f6c0f")
 
     function trsDic(x) {
         return x.replace("Mon", "Pond\u011bl\u00ed").replace("Tue", "\u00dater\u00fd").replace("Wed", "St\u0159eda").replace("Thu", "\u010ctvrtek").replace("Fri", "P\u00e1tek").replace("Sat", "Sobota").replace("Sun", "Ned\u011ble");
