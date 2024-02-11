@@ -71,6 +71,12 @@ i {
     font-size: 15px;
 }
 
+#errorStill {
+    background-color: rgba(212, 31, 31, 0.473);
+    border-radius: 15px;
+    font-size: 15px;
+}
+
 .errorText {
     color: #fff;
     font-size: 20px;
